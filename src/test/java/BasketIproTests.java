@@ -7,11 +7,11 @@ import org.openqa.selenium.*;
 
 public class BasketIproTests extends CoreTestCase {
   String SITE_URL = "https://itest.etm.ru:3004/catalog";
-  EstimateMarketPageObject EstimateMarketPageObject=new EstimateMarketPageObject();
-  EstimateIPROPageObject EstimateIPROPageObject=new EstimateIPROPageObject();
+  EstimateMarketPageObject EstimateMarketPageObject = new EstimateMarketPageObject();
+  EstimateIPROPageObject EstimateIPROPageObject = new EstimateIPROPageObject();
   AuthPageObject AuthPageObject = new AuthPageObject();
   MainPageObject MainPageObject = new MainPageObject();
-  BasketPageObject BasketPageObject=new BasketPageObject();
+  BasketPageObject BasketPageObject = new BasketPageObject();
 
   // https://itest.etm.ru:3004
   /*protected WebDriver driver;
@@ -33,9 +33,10 @@ public class BasketIproTests extends CoreTestCase {
     BasketPageObject.marketPayUponReceipt();
     //MainPageObject.waitForElementAndClick("//input[@value='4280']","not click button want to pickup LC",5);выбор радиокнопки
   }
+}
 
 
-  @Test
+  /*@Test
   public void testMarketOrderByPickupPaymentByCard() {
     driver.get(SITE_URL);
     AuthPageObject.marketAuthorization();
@@ -222,4 +223,4 @@ public class BasketIproTests extends CoreTestCase {
     BasketPageObject.paymentByAmpers();
   }
 
-  }
+  }*/

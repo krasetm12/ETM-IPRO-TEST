@@ -15,10 +15,10 @@ public class EstimateMarketPageObject extends BaseSeleniumPage { //перехо�
       WebElement button = driver.findElement(By.xpath("//a[@data-testid='top-menu-estimates']"));
       button.click();
     }
-    MainPageObject.waitForElementAndSendKeys("//input[@name='nameEst']", "999/0817524", "not found the data entry element ", 5);
+    MainPageObject.waitForElementAndSendKeys("//input[@name='nameEst']", "999/0823433", "not found the data entry element ", 5);
     MainPageObject.waitForElementAndClick("//button[@data-testid='search-button']", "not found and click element of search", 5);
 
-    MainPageObject.waitForElementAndClickable("//span[contains(.,'999/0816925')]", "not found element add to cart", 5);
+    MainPageObject.waitForElementAndClickable("//span[contains(.,'999/0823433')]", "not found element add to cart", 5);
     MainPageObject.waitForElementPresent("//tr[@data-testid='estimate-item-1']", "not found estimate", 5);
     MainPageObject.waitForElementAndClickable("//button[@data-testid='estimate-item-1-button-cart']", "not found element add to cart", 5);
     MainPageObject.waitForElementAndClick("//button[@data-testid='estimate-item-1-button-cart']", "not found and click element of search", 5);
